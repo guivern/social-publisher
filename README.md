@@ -1,4 +1,4 @@
-# publicar-en-redes
+# social-publisher
 
 Una skill para Claude Code que publica reels, imágenes, carruseles e historias en Instagram y Facebook por la API de Meta. También borra posts y busca música para los reels.
 
@@ -6,9 +6,9 @@ Claude prepara la pieza y corre el ensayo (`check`). Publica solo cuando le das 
 
 ## Instalación
 
-1. Copiá esta carpeta a `~/.claude/skills/publicar-en-redes/` (o a `.claude/skills/` de un proyecto).
+1. Copiá esta carpeta a `~/.claude/skills/social-publisher/` (o a `.claude/skills/` de un proyecto).
 2. Instalá [Node.js](https://nodejs.org) 20 o más nuevo y ffmpeg (Windows: `winget install Gyan.FFmpeg`; Mac: `brew install ffmpeg`).
-3. Creá la carpeta `~/.publicar-en-redes/` con los dos archivos de abajo. Si querés otra carpeta, poné su ruta en la variable de entorno `PUBLICAR_EN_REDES_CONFIG`.
+3. Creá la carpeta `~/.social-publisher/` con los dos archivos de abajo. Si querés otra carpeta, poné su ruta en la variable de entorno `SOCIAL_PUBLISHER_CONFIG`.
 
 Esos dos archivos son credenciales: no los subas a ningún repo ni los compartas.
 

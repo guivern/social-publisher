@@ -1,4 +1,4 @@
-# Credenciales: viven en ~/.publicar-en-redes/, nunca acá.
+# Credenciales: viven en ~/.social-publisher/, nunca acá.
 *.env
 *token*.txt
 publicado.json

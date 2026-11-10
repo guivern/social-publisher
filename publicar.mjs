@@ -10,7 +10,7 @@ import { createR2, objectKey, readEnvFile } from './r2.mjs';
 import { parsePiece } from './texto.mjs';
 import { asList, mediaFiles, validatePiece } from './validar.mjs';
 
-const CONFIG_DIR = process.env.PUBLICAR_EN_REDES_CONFIG ?? join(homedir(), '.publicar-en-redes');
+const CONFIG_DIR = process.env.SOCIAL_PUBLISHER_CONFIG ?? join(homedir(), '.social-publisher');
 const NETWORK_TITLES = { instagram: 'Instagram', facebook: 'Facebook' };
 
 // Un nombre con tilde bajado de Drive o de una Mac puede quedar en NFD en el disco.
@@ -223,7 +223,7 @@ const defaultDeps = () => {
     toJpeg,
     addSilentAudio,
     addMusic,
-    tempDir: () => mkdtempSync(join(tmpdir(), 'publicar-en-redes-')),
+    tempDir: () => mkdtempSync(join(tmpdir(), 'social-publisher-')),
     now: () => new Date(),
     sleep: (ms) => new Promise((done) => setTimeout(done, ms)),
     log: (text) => console.log(redact(text)),

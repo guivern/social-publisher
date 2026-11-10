@@ -1,5 +1,5 @@
 ---
-name: publicar-en-redes
+name: social-publisher
 description: "Use when a finished social media piece (reel, single image, carousel or story) has to go out to Instagram and Facebook through Meta's API, when a published post has to be deleted, or when music for a reel has to be found. Triggers include «publicalo», «subí este reel», «posteá», «subí la historia», «borrá el post», «buscá música para el reel»."
 ---
 
@@ -11,7 +11,7 @@ Reels, imágenes, carruseles e historias salen por la API de Meta con `publicar.
 
 ## Configuración (una vez por computadora)
 
-En `~/.publicar-en-redes/` (o en la carpeta que diga la variable `PUBLICAR_EN_REDES_CONFIG`), fuera de cualquier repo. Nunca imprimas estos archivos ni los pegues en el chat:
+En `~/.social-publisher/` (o en la carpeta que diga la variable `SOCIAL_PUBLISHER_CONFIG`), fuera de cualquier repo. Nunca imprimas estos archivos ni los pegues en el chat:
 - `meta-system-token.txt`: el token de un usuario del sistema de Meta Business con acceso a una sola página (la que tiene vinculada la cuenta de Instagram). Los pasos están en el README.
 - `r2.env`: `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`, `R2_BUCKET`. Es un bucket privado de Cloudflare R2: Meta descarga de ahí, con un link temporal, las imágenes y el video del reel. El script borra cada archivo al terminar.
 
