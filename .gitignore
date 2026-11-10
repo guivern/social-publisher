@@ -1,0 +1,5 @@
+# Credenciales: viven en ~/.publicar-en-redes/, nunca acá.
+*.env
+*token*.txt
+publicado.json
+node_modules/
